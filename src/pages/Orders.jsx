@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import OrderItem from '../components/OrderItem';
+import AppContext from '../context/AppContext';
 import '../styles/Orders.scss';
 
-const Orders = () => {
+const Orders = ({product}) => {
+
+	const { state } = useContext(AppContext);
+
 	return (
 		<div className="Orders">
 			<div className="Orders-container">
 				<h1 className="title">My orders</h1>
 				<div className="Orders-content">
-					<OrderItem />
+					{state.cart.map(product => (<OrderItem product = {product} key = {`orderItem-${product.id}`} />))}	
 				</div>
 			</div>
 		</div>

@@ -35,8 +35,8 @@ const App = () => {
 					<Route exact path="/orders" element={<Orders />} />
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="orderitem" element={<OrderItem />} />
-					<Route path="*" element={<NotFound />} />
 					<Route exact path="/password-recovery" element={<PasswordRecovery />} />
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</Layout>
 		</BrowserRouter>

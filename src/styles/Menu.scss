@@ -7,10 +7,19 @@
 	border-radius: 6px;
 	padding: 20px 20px 0 20px;
 	position: absolute;
-	top: 62px;
-	right: 50px;
-	
+	top: 60px;
+	transition: 1s ease;
+	animation: swipeLeft 1s ease forwards;
+	right: 0px;
+	z-index: 1;
+
 }
+
+@keyframes swipeLeft {
+	100% {transform: translateX(-50px);}
+}
+	
+
 .Menusito {
 	background-color: white;
 }

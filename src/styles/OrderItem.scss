@@ -9,12 +9,14 @@
 }
 .OrderItem figure {
 	margin: 0;
+	
 }
 .OrderItem figure img {
 	width: 70px;
 	height: 70px;
 	border-radius: 20px;
 	object-fit: cover;
+	
 }
 .OrderItem p:nth-child(2) {
 	color: var(--very-light-pink);
@@ -22,4 +24,9 @@
 .OrderItem p:nth-child(3) {
 	font-size: var(--md);
 	font-weight: bold;
+	cursor: pointer;
+}
+
+.OrderItem img {
+	cursor: pointer;
 }
